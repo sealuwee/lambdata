@@ -4,6 +4,6 @@ Ruwai's lambdata
 
 import pandas
 import numpy
-import scikit-learn
+import sklearn
 import scipy
 import seaborn

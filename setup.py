@@ -7,10 +7,9 @@ import setuptools
 REQUIRED = [
     "numpy",
     "pandas",
-    "scikit-learn",
+    "sklearn",
     "seaborn",
     "scipy",
-    "tweepy"
 ]
 
 with open("README.md", "r") as fh:
