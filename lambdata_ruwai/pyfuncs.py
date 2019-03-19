@@ -87,6 +87,7 @@ def poisson_distribution(size=10000,n=[20, 100, 1000],p=[0.5, 0.1, 0.01]):
         print('n =', n[i], 'Binomial:   ', np.mean(samples_binomial),
                                            np.std(samples_binomial))
 
+    return samples_poisson
 
 def create_kaggle_submission(predictions,X_test,destination):
 
