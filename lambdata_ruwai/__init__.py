@@ -7,3 +7,5 @@ import numpy
 import sklearn
 import scipy
 import seaborn
+
+from . import pyfuncs
