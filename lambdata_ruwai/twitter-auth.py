@@ -17,6 +17,7 @@ def check_auth():
     print('Step 1: Create account on https://developer.twitter.com')
     print(twitter_emoji, '-------------------------')
     print('Step 2: What is the name of your app?: ', end=' ')
+    app_name = input()
     print(twitter_emoji, '-------------------------')
     print('Step 3: Twitter API Access Token: ', end=' ')
     access_token = input(twitter_emoji, "Twitter API Access Token : ")
