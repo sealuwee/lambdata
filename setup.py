@@ -10,6 +10,7 @@ REQUIRED = [
     "sklearn",
     "seaborn",
     "scipy",
+    "matplotlib.pyplot"
 ]
 
 with open("README.md", "r") as fh:
@@ -17,7 +18,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lambdata-ruwai",
-    version="0.0.2",
+    version="0.0.3",
     author="Ruwai",
     description="A collection of Data Science helper functions",
     long_description=LONG_DESCRIPTION,
