@@ -6,7 +6,11 @@ import setuptools
 
 REQUIRED = [
     "numpy",
-    "pandas"
+    "pandas",
+    "scikit-learn",
+    "seaborn",
+    "scipy",
+    "tweepy"
 ]
 
 with open("README.md", "r") as fh:
@@ -14,7 +18,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lambdata-ruwai",
-    version="0.0.1",
+    version="0.0.2",
     author="Ruwai",
     description="A collection of Data Science helper functions",
     long_description=LONG_DESCRIPTION,
