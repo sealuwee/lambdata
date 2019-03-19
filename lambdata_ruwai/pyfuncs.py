@@ -39,24 +39,19 @@ def bernoulli_distribution(n, p):
 
     return count
 
-def poisson_distribution():
+def plot_cdf(size=10000):
 
     np.random.seed(42)
+    n_defaults = np.random.binomial(100, 0.05, size)
 
-    samples_poisson = np.random.poisson(10, size=10000)
+    x, y = ecdf(n_defaults)
 
-    print('Poisson:     ', np.mean(samples_poisson),
-                       np.std(samples_poisson))
+    _ = plt.plot(x, y, marker='.', linestyle='none')
+    plt.margins(0.002)
+    plt.xlabel('Defaults out of 100 loans')
+    plt.ylabel('ECDF')
 
-    n = [20, 100, 1000]
-    p = [0.5, 0.1, 0.01]
-
-    for i in range(3):
-        samples_binomial = np.random.binomial(n[i], p[i], size=10000)
-
-        # Print results
-        print('n =', n[i], 'Binom:', np.mean(samples_binomial),
-                                     np.std(samples_binomial))
+    plt.show()
 
 def bernoulli_plot():
 
@@ -75,6 +70,22 @@ def bernoulli_plot():
     _ = plt.ylabel('Binomial PMF')
 
     plt.show()
+
+def poisson_distribution(size=10000,n=[20, 100, 1000],p=[0.5, 0.1, 0.01]):
+
+    np.random.seed(42)
+
+    samples_poisson = np.random.poisson(10, size)
+
+    print('Poisson:     ', np.mean(samples_poisson),
+                           np.std(samples_poisson))
+
+    for i in range(3):
+        samples_binomial = np.random.binomial(n[i], p[i], size)
+
+        # Print results
+        print('n =', n[i], 'Binomial:   ', np.mean(samples_binomial),
+                                           np.std(samples_binomial))
 
 
 def create_kaggle_submission(predictions,X_test,destination):
