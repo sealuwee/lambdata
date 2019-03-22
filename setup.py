@@ -7,7 +7,7 @@ import setuptools
 REQUIRED = [
     "numpy",
     "pandas",
-    "sklearn",
+    "scikit-learn",
     "seaborn",
     "scipy",
     "matplotlib.pyplot"
@@ -18,7 +18,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lambdata-ruwai",
-    version="0.0.4",
+    version="0.0.5",
     author="Ruwai",
     description="A collection of Data Science helper functions",
     long_description=LONG_DESCRIPTION,
@@ -31,5 +31,4 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-    ],
-)
+    ],)

@@ -2,7 +2,7 @@
 
 How to use:
 
-import lamdbata_ruwai.pyfuncs as pyf
+import lambdata_ruwai.pyfuncs as pyf
 
 pyf.kaggle_submission(predictions, X_test, destination)
 
@@ -11,6 +11,7 @@ pyf.kaggle_submission(predictions, X_test, destination)
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn import model_
 
 def ecdf(data):
 
@@ -88,6 +89,8 @@ def poisson_distribution(size=10000,n=[20, 100, 1000],p=[0.5, 0.1, 0.01]):
                                            np.std(samples_binomial))
 
     return samples_poisson
+
+def
 
 def create_kaggle_submission(predictions,X_test,destination):
 
